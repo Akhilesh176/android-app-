@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trackwheel">
+
+    <application
+        android:name=".TrackWheelApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrackWheel">
+        
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TrackWheel.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TrackWheel.NoActionBar" />
+            
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".ui.FuelLogActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            
+        <activity
+            android:name=".ui.MaintenanceActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            
+        <activity
+            android:name=".ui.TripAnalyticsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            
+        <activity
+            android:name=".ui.VehicleHealthActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

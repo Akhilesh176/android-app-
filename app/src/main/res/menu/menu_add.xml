@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add_fuel"
+        android:title="Add Fuel Entry" />
+    <item
+        android:id="@+id/action_add_maintenance"
+        android:title="Add Maintenance Task" />
+    <item
+        android:id="@+id/action_add_trip"
+        android:title="Add Trip" />
+</menu>
